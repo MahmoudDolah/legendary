@@ -86,7 +86,7 @@ class Game:
         return self.metadata and 'mainGameItem' in self.metadata
 
     @property
-    def is_origin_game(self) -> bool:
+    def is_origin_game(self):
         return self.third_party_store and self.third_party_store.lower() in ['origin', 'the ea app']
 
     @property
